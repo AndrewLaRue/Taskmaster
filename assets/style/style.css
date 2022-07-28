@@ -1,0 +1,9 @@
+/* BASIC STYLES HERE */
+body {
+  height: 100vh;
+  background-color: grey;
+}
+
+.my-card {
+  height: 60vh;
+}
