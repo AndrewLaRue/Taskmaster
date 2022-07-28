@@ -6,6 +6,7 @@ import { ListsController } from "../Controllers/ListsController.js";
 class ListsService{
 
   test() {
+    
   console.log('test from list service');
 }
 
