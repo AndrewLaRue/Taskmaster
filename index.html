@@ -14,23 +14,41 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">Taskmaster</span>
-      </a>
-    </nav>
+  <header class="container-fluid">
+    <section class="row bg-dark py-3 text-light align-items-center">
+      <!-- form intake -->
+      <div class="col-6">
+        <form class="row align-items-end" onsubmit="app.listsController.createList()">
+          <div class="col-7">
+            <label for="name" class="form-label"></label>
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp"
+              placeholder="New List">
+          </div>
+          <div class="col-3 text-center">
+            <label for="color" class="form-label ">Color</label>
+            <input type="color" class="form-control p-0 rounded" name="color" id="color">
+          </div>
+          <div class="col-2">
+            <button type="submit" class=" btn selectable text-light pb-0">Add</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-3 offset-3 fs-1">
+        TaskMaster
+      </div>
+
+
+    </section>
   </header>
 
 
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4">
-          <!-- card -->
-          <section class=" bg-light shadow m-5 my-card">
+        <div id="listCard" class="col-4 p-5">
+
+          <!-- <section class=" bg-light shadow m-5 my-card">
             <div class="row">
               <div class="col-12">
 
@@ -53,7 +71,7 @@
                 ADD TASK ROW
               </div>
             </div>
-          </section>
+          </section> -->
 
         </div>
       </div>

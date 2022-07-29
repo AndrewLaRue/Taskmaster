@@ -7,3 +7,7 @@ body {
 .my-card {
   height: 60vh;
 }
+
+.color-wheel {
+  border-radius: 50%;
+}
