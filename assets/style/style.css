@@ -4,8 +4,8 @@ body {
   background-color: grey;
 }
 
-.my-card {
-  height: 60vh;
+.my-card-body {
+  min-height: 20vh;
 }
 
 .color-wheel {
