@@ -5,7 +5,7 @@ import { generateId } from "../Utils/generateId.js"
 
 
 
-export class List{
+export class List {
 
 
   constructor(data) {
@@ -44,9 +44,9 @@ export class List{
 
   get Tasks() {
     let template = ''
-      let tasks = ProxyState.tasks.filter(task => task.listId == this.id)
+    let tasks = ProxyState.tasks.filter(task => task.listId == this.id)
     tasks.forEach(task => template += task.Template)
-    if(template){
+    if (template) {
       return template
     } else {
       return '<li>Add task to new list below</li>'
